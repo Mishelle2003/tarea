@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÙSQUEDA DE POKÉMON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./etilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <p><strong><h1 style="color: #5C4B51;">BUSCA TU POKÉMON</h1></strong></p>
+        </header>
+
+        <section>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="categoria" class="form-label" style="color: #5C4B51;">CATEGORÍA DEL POKÉMON</label>
+                    <select name="categoria" id="categoria" class="form-select">
+                        <option value="todos">TODOS</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="filtro" class="form-label" style="color: #5C4B51;">NOMBRE DEL POKÉMON</label>
+                    <input type="text" name="filtro" placeholder="Buscar Pokémon" id="filtro" class="form-control">
+                </div>
+                <div class="col-12">
+                    <button class="btn w-100" id="buscarBtn" type="button">BUSCAR POKÉMON</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="row mt-3" id="resultados"></section>
+
+        <nav class="navbar mt-4 justify-content-between" id="navegacion">
+            <button class="btn" type="button" id="anterior">← ANTERIOR</button>
+            <button class="btn" type="button" id="siguiente">SIGUIENTE →</button>
+        </nav>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Fondo general */
+body {
+    background-color: #FFE4E9; /* Rosa pastel */
+    color: #5C4B51; /* Marrón suave */
+    font-family: 'Poppins', sans-serif; /* Tipografía más moderna */
+}
+
+/* Estilo para contenedor de resultados */
+#contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Animación en tarjetas */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de las tarjetas */
+.card {
+    padding: 15px;
+    width: 320px;
+    margin: 15px auto;
+    border-radius: 15px;
+    background-color: #FFF0F6; /* Fondo rosa claro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: aparecer 0.5s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Texto dentro de la tarjeta */
+.card-body {
+    color: #5C4B51; /* Texto en marrón suave */
+}
+
+/* Botones en las tarjetas */
+.card-body button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    margin-top: 10px;
+    background-color: #F9C5D1; /* Rosa suave */
+    border: none;
+    border-radius: 8px;
+    color: #5C4B51; /* Texto marrón */
+    transition: background-color 0.3s ease;
+}
+
+.card-body button:hover {
+    background-color: #E3B2BC; /* Rosa más oscuro */
+}
+
+/* Botones de navegación */
+#navegacion button {
+    width: 48%;
+    padding: 10px;
+    background-color: #C5A3C6; /* Lavanda suave */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#navegacion button:hover {
+    background-color: #A37EA4; /* Lavanda más oscuro */
+}
+
+/* Ajustes en inputs */
+.form-select, .form-control {
+    background-color: #FEEFF4; /* Fondo rosa claro */
+    border-color: #E8B3C4; /* Borde rosa */
+    color: #5C4B51; /* Texto marrón */
+}
